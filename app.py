@@ -53,6 +53,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+st.markdown(""" ... """, unsafe_allow_html=True)
 
 st.subheader("🧾 Veuillez remplir les champs ci-dessous :")
 
