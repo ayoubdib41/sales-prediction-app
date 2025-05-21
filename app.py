@@ -7,6 +7,53 @@ pipeline = joblib.load("sales_pipeline.pkl")
 
 # Titre de l'app
 st.title("📈 Prédiction des ventes - Superstore")
+# 🎨 Style professionnel du fond et de la police
+st.markdown("""
+    <style>
+    /* Fond général */
+    .stApp {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        color: #212529;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Titres */
+    h1, h2, h3 {
+        color: #0d6efd;
+    }
+
+    /* Widgets (inputs, sliders, etc.) */
+    .stTextInput > div > div > input,
+    .stNumberInput input,
+    .stSelectbox div,
+    .stButton button {
+        border-radius: 8px;
+        padding: 0.4rem;
+        font-size: 0.95rem;
+    }
+
+    /* Boutons */
+    .stButton>button {
+        background-color: #0d6efd;
+        color: white;
+        border: none;
+        transition: 0.3s;
+    }
+
+    .stButton>button:hover {
+        background-color: #0b5ed7;
+    }
+
+    /* Encadré de la prédiction */
+    .stAlert {
+        background-color: #e2f0d9;
+        color: #155724;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 st.subheader("🧾 Veuillez remplir les champs ci-dessous :")
 
 # Interface utilisateur
